@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Learn HTML - All in One</title>
+  <script>
+    function showSection(sectionId) {
+      document.getElementById("home").style.display = "none";
+      document.getElementById("about").style.display = "none";
+      document.getElementById("elements").style.display = "none";
+      document.getElementById("contact").style.display = "none";
+
+ 
+      document.getElementById(sectionId).style.display = "block";
+    }
+  </script>
+</head>
+<body bgcolor="lightyellow">
+
+  <h1>Learn HTML - Simple Website</h1>
+  <Navigation>
+  <h3>Navigation</h3>
+  <ul>
+    <li><a href="#" onclick="showSection('home')">Home</a></li>
+    <li><a href="#" onclick="showSection('about')">About HTML</a></li>
+    <li><a href="#" onclick="showSection('elements')">HTML Elements</a></li>
+    <li><a href="#" onclick="showSection('contact')">Contact Us</a></li>
+  </ul>
+
+  <Sections>
+  <hr>
+
+  <div id="home" style="display:none;">
+    <h2>🏠 Home</h2>
+    <p>Welcome to our basic HTML learning page. Here you will understand what HTML is, explore some important elements, and try a simple contact form.</p>
+  </div>
+
+  <div id="about" style="display:none;">
+    <h2>📘 About HTML</h2>
+    <p><b>HTML</b> stands for <b>HyperText Markup Language</b>. It is the standard language used to create and design webpages.</p>
+    <p>HTML uses a series of <b>tags</b> to structure content such as text, images, links, and forms. These tags tell the browser how to display the content.</p>
+    <p><b>Key points about HTML:</b></p>
+    <ul>
+      <li>It is not a programming language. It is a markup language.</li>
+      <li>HTML files end with the <code>.html</code> or <code>.htm</code> extension.</li>
+      <li>It is supported by all modern web browsers.</li>
+      <li>HTML can be combined with CSS for styling and JavaScript for behavior.</li>
+    </ul>
+  </div>
+
+  <div id="elements" style="display:none;">
+    <h2>🔤 HTML Elements</h2>
+    <p>Here are some common HTML elements:</p>
+    <ul>
+      <li><b>&lt;h1&gt; to &lt;h6&gt;</b> - Headings (h1 is largest, h6 is smallest)</li>
+      <li><b>&lt;p&gt;</b> - Paragraph</li>
+      <li><b>&lt;a&gt;</b> - Anchor/Link</li>
+      <li><b>&lt;img&gt;</b> - Image</li>
+      <li><b>&lt;ul&gt;, &lt;li&gt;</b> - Unordered List and List Items</li>
+      <li><b>&lt;ol&gt;, &lt;li&gt;</b> - Ordered List and List Items</li>
+      <li><b>&lt;form&gt;</b> - Form</li>
+      <li><b>&lt;input&gt;</b> - Input Field</li>
+      <li><b>&lt;textarea&gt;</b> - Text Area</li>
+      <li><b>&lt;table&gt;</b> - Table</li>
+      <li><b>&lt;div&gt;</b> and <b>&lt;span&gt;</b> - Layout containers</li>
+    </ul>
+  </div>
+
+  <div id="contact" style="display:none;">
+    <h2>📞 Contact Us</h2>
+    <p>Use the form below to send us a message:</p>
+    <form>
+      <p>Name: <input type="text" name="name"></p>
+      <p>Email: <input type="email" name="email"></p>
+      <p>Message:<br>
+      <textarea rows="5" cols="30"></textarea></p>
+      <p><input type="submit" value="Send"></p>
+    </form>
+  </div>
+
+  <hr>
+  <p>&copy;Arashpreet Kaur,URN- 2434929 | All rights reserved.</p>
+
+</body>
+</html>
